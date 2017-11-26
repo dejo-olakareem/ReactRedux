@@ -11,7 +11,12 @@ class LibraryList extends Component {
   }
 
   render() {
-    return;
+    return (
+      <ListView
+        dataSource={this.dataSource}
+        renderRow={this.renderRow}
+      />
+    );
   }
 }
 
