@@ -5,7 +5,9 @@ import { createStore } from 'redux';
 
 const App = () => {
   return (
-    <View />
+    <Provider store={createStore}>
+      <View />
+    </Provider>
   );
 };
 
